@@ -1903,9 +1903,9 @@ function startGame() {
     resultScreen.classList.add('hidden');
     gameScreen.classList.remove('hidden');
 
-    // プレイ中はタイトルロゴを隠す（スマホ対応）
-    const titleLogo = document.getElementById('title-logo');
-    if (titleLogo) titleLogo.style.display = 'none';
+    // プレイ中はタイトルロゴ全体を隠す（スマホ対応）
+    const titleContainer = document.querySelector('header .title');
+    if (titleContainer) titleContainer.style.display = 'none';
 }
 
 function generateOptions(correctAns) {
@@ -2007,9 +2007,9 @@ function showResults() {
     finalScore.innerText = score;
     playSFX('result.mp3');
 
-    // 結果画面ではタイトルロゴを再表示
-    const titleLogo = document.getElementById('title-logo');
-    if (titleLogo) titleLogo.style.display = 'block';
+    // 結果画面ではタイトル全体を再表示
+    const titleContainer = document.querySelector('header .title');
+    if (titleContainer) titleContainer.style.display = 'flex';
 
     const resultMsg = document.getElementById('result-message');
     const resultStreak = document.getElementById('result-streak');
@@ -2090,9 +2090,9 @@ if (backToTitleBtn) {
         resultScreen.classList.add('hidden');
         startScreen.classList.remove('hidden');
 
-        // タイトルロゴを確実に表示
-        const titleLogo = document.getElementById('title-logo');
-        if (titleLogo) titleLogo.style.display = 'block';
+        // タイトル全体を確実に表示
+        const titleContainer = document.querySelector('header .title');
+        if (titleContainer) titleContainer.style.display = 'flex';
 
         init(); // 乱数でタイトルキャラ等を再設定
     };

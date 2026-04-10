@@ -1510,8 +1510,8 @@ const CHARACTERS = [
         description: "サーフィスの本体。小心者で陰湿な性格だが、スタンド使いとして仗助達の前に立ちはだかった。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "コピー完了！", "sub": "木の人形のように完璧な計算だぜ！" }, { "text": "へへへ…", "sub": "裏の裏をかいた正解だッ！" }],
+        failMessages: [{ "text": "サーフィス！", "sub": "おい！俺と同じミスをするんじゃあねー！" }, { "text": "イラつかせる…", "sub": "この僕をイラつかせるなよッ！" }]
     }
     ,
     {
@@ -1521,8 +1521,8 @@ const CHARACTERS = [
         description: "グレー・フライのスタンド。カブトムシのような姿で、銃弾をかわすほどの超スピード。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "光速だッ！", "sub": "銃弾さえもかわす、神速の計算だ！" }, { "text": "抜き取った！", "sub": "正解の急所を正確に射抜いたぜ！" }],
+        failMessages: [{ "text": "マヌケめ！", "sub": "そんなトロい計算で私に勝てるか！" }, { "text": "針が…", "sub": "計算ミスという「隙」を見せたなッ！" }]
     }
     ,
     {
@@ -1532,8 +1532,8 @@ const CHARACTERS = [
         description: "スーパー・フライの本体。一生鉄塔の中で自給自足の生活を夢見ていた。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "反射するッ！", "sub": "ミスのつけ入る隙のない完璧な計算だ！" }, { "text": "鉄塔の主だ", "sub": "自給自足の正確な計算能力だな！" }],
+        failMessages: [{ "text": "エネルギーが", "sub": "計算ミスが鉄塔を伝って自分に返るぞッ！" }, { "text": "出られない…", "sub": "ミスという鉄塔から出られなくなったか！" }]
     }
     ,
     {
@@ -1542,9 +1542,9 @@ const CHARACTERS = [
         quotes: ["「暗黒空間にバラ撒いてやるッ！」", "「DIO様のために死ねェーーッ！！」"],
         description: "クリームの本体。暗黒空間を操るDIOの最側近。DIOへの忠誠心は狂気的。",
         successSFX: "correct.mp3",
-        failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        failSFX: "muda_muda.mp3",
+        successMessages: [{ "text": "バラ撒くぞ", "sub": "正解という名の暗黒空間に沈めッ！" }, { "text": "DIO様のために", "sub": "DIO様への捧げ物にふさわしい正解だ！" }],
+        failMessages: [{ "text": "ドブネズミが", "sub": "私の計算を汚す者は一人として生かさぬ！" }, { "text": "万死に値する", "sub": "DIO様を待たせるとは…愚か者がッ！" }]
     }
     ,
     {
@@ -1554,19 +1554,19 @@ const CHARACTERS = [
         description: "柱の男の一人。誇り高き戦士。風を操り、必殺技は「神砂嵐」。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "神砂嵐！", "sub": "吹き荒れる正解の嵐だッ！" }, { "text": "見事だ戦士よ", "sub": "敬意を表して正解を与えよう！" }],
+        failMessages: [{ "text": "波紋かッ！", "sub": "私の計算を乱すとは…策士よなッ！" }, { "text": "闘技場の掟", "sub": "敗北（ミス）は死（やり直し）を意味する！" }]
     }
     ,
     {
         name: "ズィー・ズィー",
         img: "assets/ZZ_Infobox_Manga.png",
         quotes: ["「車がスタンドなんだッ！」", "「ホイール・オブ・フォーチュン！」"],
-        description: "ホイール・オブ・フォーチュンの本体。愛車を強化し、ジョースター一行を追いつめた。",
+        description: "ホイール・オブ_フォーチュンの本体。愛車を強化し、ジョースター一行を追いつめた。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "勝ったッ！", "sub": "第3部完！文句なしの大正解だぜ！" }, { "text": "パワー全開！", "sub": "エンジン全開！正解へと突っ走るぞ！" }],
+        failMessages: [{ "text": "熱いッ！", "sub": "火を消せェーッ！大失敗だぁーッ！" }, { "text": "ガソリンが", "sub": "計算のガソリンが切れたか…ッ！" }]
     }
     // AUTO_GEN_CHARACTERS_END
 ];

@@ -1902,6 +1902,10 @@ function startGame() {
     startScreen.classList.add('hidden');
     resultScreen.classList.add('hidden');
     gameScreen.classList.remove('hidden');
+
+    // プレイ中はタイトルロゴを隠す（スマホ対応）
+    const titleLogo = document.getElementById('title-logo');
+    if (titleLogo) titleLogo.style.display = 'none';
 }
 
 function generateOptions(correctAns) {
@@ -2003,6 +2007,10 @@ function showResults() {
     finalScore.innerText = score;
     playSFX('result.mp3');
 
+    // 結果画面ではタイトルロゴを再表示
+    const titleLogo = document.getElementById('title-logo');
+    if (titleLogo) titleLogo.style.display = 'block';
+
     const resultMsg = document.getElementById('result-message');
     const resultStreak = document.getElementById('result-streak');
 
@@ -2081,6 +2089,11 @@ if (backToTitleBtn) {
     backToTitleBtn.onclick = () => {
         resultScreen.classList.add('hidden');
         startScreen.classList.remove('hidden');
+
+        // タイトルロゴを確実に表示
+        const titleLogo = document.getElementById('title-logo');
+        if (titleLogo) titleLogo.style.display = 'block';
+
         init(); // 乱数でタイトルキャラ等を再設定
     };
 }

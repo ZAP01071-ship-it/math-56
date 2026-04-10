@@ -1032,7 +1032,9 @@ const CHARACTERS = [
         quotes: ["「無駄無駄無駄無駄ァ！！」", "「時よ止まれッ！ザ・ワールド！」"],
         description: "ザ・ワールドの本体。時を止める能力を持つ究極の吸血鬼。",
         successSFX: "correct.mp3",
-        failSFX: "wrong.mp3"
+        failSFX: "muda_muda.mp3",
+        successMessages: [{ "text": "最高にハイ！", "sub": "100年前の正解など、今の私にとっては当然のこと！" }, { "text": "時は止まった", "sub": "正解の瞬間だけを切り取って見せたぞッ！" }],
+        failMessages: [{ "text": "無駄無駄ァ！", "sub": "止まった時の世界で計算をやり直す必要がありそうだな！" }, { "text": "ロードローラー！", "sub": "計算ミスをロードローラーで押しつぶしてやるッ！" }]
     }
     ,
     {
@@ -1096,7 +1098,9 @@ const CHARACTERS = [
         quotes: ["「俺の妹の仇を討つッ！」", "「シルバーチャリオッツよ！！」"],
         description: "タロットカードやエジプト9栄神に由来する恐るべきスタンド使い。",
         successSFX: "correct.mp3",
-        failSFX: "wrong.mp3"
+        failSFX: "wrong.mp3",
+        successMessages: [{ "text": "騎士の精神だ", "sub": "計算に迷いなし！シルバーチャリオッツの名にかけて！" }, { "text": "ブラボー！", "sub": "おお…ブラボー！素晴らしい正解だぜッ！" }],
+        failMessages: [{ "text": "ありのままに…", "sub": "計算を間違えるなんて…ありのままの事実を話すぜ！" }, { "text": "便所掃除かッ", "sub": "こんなミスをするヤツは便所掃除からやり直しだぜッ！" }]
     }
     ,
     {
@@ -1128,8 +1132,8 @@ const CHARACTERS = [
         description: "持ち主を操る意思を持つ刀のスタンド。戦うほどに成長し、相手の技を記憶する。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "覚えたぞッ！", "sub": "お前の正解のパターンは完全に記憶したッ！" }, { "text": "絶対勝つ！", "sub": "計算を重ねるほど私の刃（知能）は鋭くなるッ！" }],
+        failMessages: [{ "text": "折られたかッ", "sub": "計算という真剣勝負に負けるとは…不覚ッ！" }, { "text": "鞘にいろ！", "sub": "ミスするヤツは鞘の中で眠っていなッ！" }]
     }
     ,
     {
@@ -1139,8 +1143,8 @@ const CHARACTERS = [
         description: "500年以上前の刀匠キャラバン・サライが打ったと言われる、意思を持つスタンド。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "抜かれたッ！", "sub": "正解という名の名刀が今、引き抜かれたぞッ！" }, { "text": "500年の技", "sub": "500年前から不変の、完璧な答えだッ！" }],
+        failMessages: [{ "text": "抜かせんぞ", "sub": "お前のようなミスをするヤツには私を抜く資格はない！" }, { "text": "川に沈むわ", "sub": "ミスばかりでは川底で500年待つことになるぞ！" }]
     }
     ,
     {
@@ -1161,8 +1165,8 @@ const CHARACTERS = [
         description: "サンの本体。砂漠で鏡張りの建物に隠れ、熱で一行を苦しめた。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "太陽の勝ちだ！", "sub": "灼熱の太陽のような、逃げ場のない正解だッ！" }, { "text": "鏡のトリック", "sub": "見事な計算のトリックで正解を導いたな！" }],
+        failMessages: [{ "text": "熱すぎる…", "sub": "計算の熱源が見当たらないぞ！やり直しだ！" }, { "text": "鏡が割れた！", "sub": "トリック（計算ミス）を見破られてしまったかッ！" }]
     }
     ,
     {
@@ -1172,8 +1176,8 @@ const CHARACTERS = [
         description: "ジャッジメントの本体。地面に穴を掘り、そこから願いを叶えるフリをして攻撃する。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "願いを叶えた！", "sub": "正解という最高の願いを叶えてやったぜ！" }, { "text": "Hail 2 U!", "sub": "君に計算の幸あれ！完璧な正解だッ！" }],
+        failMessages: [{ "text": "土人形で…", "sub": "計算ミスを土人が代わりにやってしまったか！？" }, { "text": "埋めとけッ！", "sub": "そんなミスをするヤツは地面に埋めてやるぜ！" }]
     }
     ,
     {
@@ -1183,8 +1187,8 @@ const CHARACTERS = [
         description: "ダークブルー・ムーンの本体。本物の船長を殺してすり替わった偽物。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "海の中の王者", "sub": "水中でも息ができるほど完璧な計算だッ！" }, { "text": "無敵だッ！", "sub": "計算の激流に飲み込まれず正解したな！" }],
+        failMessages: [{ "text": "肺が重い…", "sub": "計算ミスで肺に水が入ったような苦しさだな！" }, { "text": "船長失格だ", "sub": "偽物よりもひどい計算ミスをするなんてな！" }]
     }
     ,
     {
@@ -1194,8 +1198,8 @@ const CHARACTERS = [
         description: "オシリス神の本体。ギャンブルの天才で、負けた者の魂をコインに変える。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "GOOD!", "sub": "私の魂をコールしてもいいほど完璧な正解だ！" }, { "text": "イカサマか？", "sub": "精密すぎてイカサマを疑うほどの計算能力だぜ！" }],
+        failMessages: [{ "text": "負けを…", "sub": "計算ミスという『負け』を認めるんだな（CHECK MATE）！" }, { "text": "魂をコインに", "sub": "ミスするヤツの魂はコインにして奪ってやろう！" }]
     }
     ,
     {
@@ -1205,19 +1209,19 @@ const CHARACTERS = [
         description: "エボニー・デビルの本体。受けた傷を恨みに変え、人形で遠隔攻撃する。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "恨みの底力！", "sub": "計算ミスを執念で正解に変えたようだなッ！" }, { "text": "正解の力！", "sub": "切り刻まれたほどの難問を解き明かしたな！" }],
+        failMessages: [{ "text": "もっと恨め！", "sub": "ミスした自分を恨んで、次のパワーに変えるんだッ！" }, { "text": "人形でやるぞ", "sub": "計算すら人任せにしたいほどのミスだなッ！" }]
     }
     ,
     {
         name: "ディオ・ブランドー",
         img: "assets/Dio_PB_Infobox_Manga.png",
         quotes: ["「おまえは今まで食ったパンの枚数をおぼえているのか？」", "「無駄無駄無駄無駄ァ！」"],
-        description: "ジョースター家の養子となり、石仮面で吸血鬼となった男。全ての因縁の始まり。",
+        description: "ジョースター家の養子となり、石仮面で吸血鬼となった男。あらゆる因縁の始まり。",
         successSFX: "correct.mp3",
-        failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        failSFX: "muda_muda.mp3",
+        successMessages: [{ "text": "パンの枚数か", "sub": "正解の数など、食べたパンの枚数と同じで数え切れんな！" }, { "text": "WRYYYYY!", "sub": "人間を超越した完璧な計算力だッ！" }],
+        failMessages: [{ "text": "貧弱ゥ！", "sub": "そんな計算、貧弱すぎて話にならんなッ！" }, { "text": "無駄な足掻きだ", "sub": "ミスを重ねるなど、時間の無駄無駄無駄ァ！" }]
     }
     ,
     {
@@ -1227,8 +1231,8 @@ const CHARACTERS = [
         description: "自称宇宙人の不思議な少年。あらゆる物体に変身する能力を持つ。サイレンの音が苦手。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "宇宙の真理", "sub": "地球の計算もマスターしましたね。さすがです！" }, { "text": "変身成功！", "sub": "正解に合わせて私の思考も最適化されましたッ！" }],
+        failMessages: [{ "text": "サイレンが…", "sub": "うるさくて計算に集中できません！助けてください！" }, { "text": "地球は奇妙だ", "sub": "そんな計算ミスをするなんて、やはり地球は不思議ですね。" }]
     }
     ,
     {
@@ -1238,8 +1242,8 @@ const CHARACTERS = [
         description: "ジャスティスの本体。霧を操り死体を自在に動かす。スタンドの矢の秘密を知る老婆。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "ジャスティス！", "sub": "霧を晴らすような、見事な回答だ！ヒヒヒ！" }, { "text": "DIO様のために", "sub": "この正解があれば、DIO様もさぞお喜びになるでしょう！" }],
+        failMessages: [{ "text": "裁きを下す！", "sub": "ミスするヤツはジャスティスの霧に巻いてやる！" }, { "text": "死体にしてやる", "sub": "計算能力のない死体にでもなりたいのかい！？" }]
     }
     ,
     {
@@ -1249,19 +1253,19 @@ const CHARACTERS = [
         description: "柱の男の一人。炎を操る。感情が高ぶると激しく泣いて冷静さを取り戻す。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "熱っついぞ！", "sub": "血液が沸騰するほどの熱い正解だッ！" }, { "text": "怪焔王だァッ！", "sub": "計算を焼き尽くす完璧なロジックだぜ！" }],
+        failMessages: [{ "text": "あんまりだァ！", "sub": "HEEEEYYYY! あァァァんまりだァァアア！！ミスしたァァ！" }, { "text": "泣いてスッキリ", "sub": "ふぅ…計算ミスしたが、泣いたらスッキリしたぜ。" }]
     }
     ,
     {
         name: "グレー・フライ",
         img: "assets/Gray_Fly_Infobox_Manga.png",
         quotes: ["「飛行機の中で死ねッ！」", "「タワー・オブ・グレーは光よりも速い！」"],
-        description: "タワー・オブ・グレーの本体。老人の姿をしているが、極めて高い殺傷能力を持つ。",
+        description: "タワー・オブ・グレーの本体。老人の姿をしているが、極烈な殺傷能力を持つ。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "光速を超えた", "sub": "老化など微塵も感じさせん完璧な計算だッ！" }, { "text": "飛行機は落ちる", "sub": "お前の正解で不時着を免れたようだな！" }],
+        failMessages: [{ "text": "老いたか…", "sub": "そんなトロい計算…老人の私にも劣るぞッ！" }, { "text": "針を抜けッ！", "sub": "舌を抜き取られて喋れなくなるようなミスだな！" }]
     }
     ,
     {
@@ -1271,8 +1275,8 @@ const CHARACTERS = [
         description: "ハングドマンの本体。エンヤ婆の息子。両手が右手で、鏡の中を移動して攻撃する。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "鏡の世界…？", "sub": "光の反射のような速さで解き明かしたな！ヒッヒ！" }, { "text": "喉元を裂くぜ", "sub": "正解の急所を確実にとらえたようだな！" }],
+        failMessages: [{ "text": "右手が２つ…", "sub": "計算が自分の首を絞めることになるとはなッ！" }, { "text": "光に焼かれろ", "sub": "計算ミスのせいで鏡の世界から逃げ遅れたぞッ！" }]
     }
     ,
     {
@@ -1282,8 +1286,8 @@ const CHARACTERS = [
         description: "隠者の紫の本体。承太郎の祖父で、歴戦の勇士。念写能力でDIOを追う。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "念写完了！", "sub": "ハーミットパープルで正解を見抜き出したぞッ！" }, { "text": "Nice!", "sub": "さすがは我が孫承太郎…いや、君のことだ！" }],
+        failMessages: [{ "text": "OH NO!!", "sub": "策士のつもりが足元をすくわれてしまったか！" }, { "text": "OH MY GOD!", "sub": "これはまたとんでもない計算ミスだぞッ！" }]
     }
     ,
     {
@@ -1293,8 +1297,8 @@ const CHARACTERS = [
         description: "カメオのスタンド。土で土人形を作り出し、相手の願いを歪んだ形で実現する。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "HAIL 2 U!", "sub": "計算の願いがそのまま形になった正解だッ！" }, { "text": "幸あれ！", "sub": "君に幸あれ！完璧な計算結果だと言ってやろう！" }],
+        failMessages: [{ "text": "偽りの願い", "sub": "計算が土人形でできていたようだな、もろいぞッ！" }, { "text": "ケチがついた", "sub": "そのミス…とんでもなくケチがついてしまったな！" }]
     }
     ,
     {
@@ -1304,8 +1308,8 @@ const CHARACTERS = [
         description: "ハイエロファントグリーンの本体。冷静で礼儀正しいが、内に熱い闘志を秘めた少年。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "結界成功！", "sub": "逃げ場のない完璧な包囲網で正解を射止めた！" }, { "text": "メロンパンだ", "sub": "レロレロレロ…甘美な正解の味ですね。" }],
+        failMessages: [{ "text": "解けない…", "sub": "ハイエロファントグリーンの結界が破られただと！？" }, { "text": "目が…！", "sub": "計算ミスのせいで一撃を食らってしまったようですね。" }]
     }
     ,
     {
@@ -1315,8 +1319,8 @@ const CHARACTERS = [
         description: "柱の男のリーダー。石仮面の製作者。光り輝く刃で攻撃する。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "究極の生命体", "sub": "もはや計算ですら私を超越することはできんッ！" }, { "text": "輝彩滑刀！", "sub": "光り輝く刃のような鋭い正解だッ！" }],
+        failMessages: [{ "text": "宇宙へ…", "sub": "計算ミスの衝撃で宇宙まで飛ばされてしまったか！" }, { "text": "不老不死だぞ", "sub": "ミスしても死なぬが、イライラは最高潮だッ！" }]
     }
     ,
     {
@@ -1326,8 +1330,8 @@ const CHARACTERS = [
         description: "アヌビス神に操られた理髪師。凄まじいスピードの剣技を繰り出した。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "覚えたぞッ！", "sub": "お前の計算のキレ、アヌビス神が記憶したぜ！" }, { "text": "刀の達人だ", "sub": "剃刀のような鋭い正解を見せてくれたな！" }],
+        failMessages: [{ "text": "アヌビス神が…", "sub": "計算の刃がこぼれてしまったようだなッ！" }, { "text": "ハサミ打ち！", "sub": "ミスにハサミ打ちされて逃げ場を失ったぜ！" }]
     }
     ,
     {
@@ -1337,8 +1341,8 @@ const CHARACTERS = [
         description: "デス13の本体。生後11ヶ月の天才児。夢の中のスタンドでジョースター一行を窮地に陥れた。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "ラリホー！", "sub": "夢の中でも計算できるとは、天才児の僕も驚きだね！" }, { "text": "夢の正解", "sub": "デス13の世界でも通用する、悪夢のような大正解だ！" }],
+        failMessages: [{ "text": "ハ、ハイ〜ン！", "sub": "夢から覚めて、ミスした現実を見るんだね！ヒヒ！" }, { "text": "安全ピンだ", "sub": "計算ミスを安全ピンで留めておきたいくらい恥ずかしいね！" }]
     }
     ,
     {
@@ -1348,16 +1352,19 @@ const CHARACTERS = [
         description: "バステト神の本体。コンセントのようなスタンドで触れた者を磁石に変える。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "磁力全開！", "sub": "正解のコンセントに触れてしまったようね！ウフフ！" }, { "text": "あんた頭いいわ", "sub": "私の脚の美しさと同じくらい、完璧な解答ねッ！" }],
+        failMessages: [{ "text": "押しつぶすわ", "sub": "計算ミスしたあんたを、鉄屑と一緒に押しつぶしてあげる！" }, { "text": "ショートした？", "sub": "バステト神の力（磁力）で計算が狂ったようねッ！" }]
     }
     ,
     {
-        name: "Midler_Revealed_Infobox",
+        name: "ミドラー",
         img: "assets/Midler_Revealed_Infobox.png",
-        quotes: ["「オラオラ！新キャラだッ！」", "「グレートですよこいつはァ！」"],
+        quotes: ["「ハイ・プリエステスは鉱物なら何にでもなれる！」", "「ダイヤモンドにだってなるんだッ！」"],
+        description: "ハイ・プリエステスの本体。非常に美しい女性（らしい）が、姿を見せることは稀。",
         successSFX: "correct.mp3",
-        failSFX: "wrong.mp3"
+        failSFX: "wrong.mp3",
+        successMessages: [{ "text": "ダイヤモンドだ", "sub": "正解という名の鋼鉄よりも硬い自信を感じるわ！" }, { "text": "何にでもなれる", "sub": "どんな難問も私のスタンドのように自由自在ねッ！" }],
+        failMessages: [{ "text": "すり抜けた！？", "sub": "私の計算をすり抜けるなんて許さないわよ！" }, { "text": "海底へ沈め", "sub": "ミスするヤツはハイ・プリエステスの餌食よッ！" }]
     }
     ,
     {
@@ -1367,8 +1374,8 @@ const CHARACTERS = [
         description: "自称宇宙人。あらゆる物体に変身するが、自分の意図しないものになると苦しむ。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "宇宙の法則", "sub": "地球の計算もマスターしましたね。さすがです！" }, { "text": "変身成功！", "sub": "正解に合わせて私の思考も最適化されましたッ！" }],
+        failMessages: [{ "text": "サイレンが…", "sub": "うるさくて計算に集中できません！助けてください！" }, { "text": "地球は奇妙だ", "sub": "そんな計算ミスをするなんて、やはり地球は不思議ですね。" }]
     }
     ,
     {
@@ -1378,8 +1385,8 @@ const CHARACTERS = [
         description: "ゲブ神の本体。盲目だが、音だけで相手の動きを察知するエジプト9栄神の男。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "音を捕らえた", "sub": "計算という微かな振動…ゲブ神が見事にキャッチしたぞ！" }, { "text": "正解の足音だ", "sub": "砂漠の向こうから完璧な正解が近づいてくる音がしたぜ！" }],
+        failMessages: [{ "text": "杖の音が…", "sub": "計算ミスという不協和音が私のゲブ神を狂わせたか！" }, { "text": "悪の救世主", "sub": "ミスを救う救世主など、この私には不必要だッ！" }]
     }
     ,
     {
@@ -1389,8 +1396,8 @@ const CHARACTERS = [
         description: "ダニエル・J・ダービーのスタンド。ギャンブルで負けを認めた相手の魂を奪う。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "グッド！", "sub": "ダービーが魂を賭ける価値のある大正解だぜッ！" }, { "text": "コイン獲得だ", "sub": "計算という勝負に勝ったな！魂のコインは渡さないぜッ！" }],
+        failMessages: [{ "text": "負けを認めろ", "sub": "ミスした瞬間に勝負は決した！魂をコインにさせてもらうッ！" }, { "text": "ブラフだわ", "sub": "そんなデタラメな計算…ブラフにもなっていないなッ！" }]
     }
     ,
     {
@@ -1400,8 +1407,8 @@ const CHARACTERS = [
         description: "ホルス神の本体。DIOの館を守るハヤブサ。冷気を自在に操る。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "氷結だッ！", "sub": "一分の狂いもない、ホルス神の氷の弾丸のような正解だ！" }, { "text": "ホホッ！", "sub": "鋭い眼差しで正解を捉えたぜ！逃がさないッ！" }],
+        failMessages: [{ "text": "嘴が折れる", "sub": "計算ミス…氷を吐き損ねて自爆してしまったのかッ！" }, { "text": "凍りつけッ！", "sub": "そんなミスをするヤツは館に入れるわけにはいかねーッ！" }]
     }
     ,
     {
@@ -1411,8 +1418,8 @@ const CHARACTERS = [
         description: "シルバーチャリオッツの本体。妹の仇を討つためにDIOを追い、ジョースター一行に加わった。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "ブラボー！", "sub": "計算の剣技が冴え渡っているぜッ！ブラボーッ！！" }, { "text": "ありのまま…", "sub": "ありのまま今起こったことを話すぜ！『お前は正解した』！" }],
+        failMessages: [{ "text": "便器をなめる", "sub": "計算ミスをしたら便器をなめる覚悟はできてるのかッ！？" }, { "text": "ハサミ打ちだ", "sub": "ミスのハサミ打ちを受けて逃げ場を失っちまったぜ！" }]
     }
     ,
     {
@@ -1422,8 +1429,8 @@ const CHARACTERS = [
         description: "食屍鬼街のボスだったが、ジョナサンの高潔な精神に心打たれ、親友となった。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "クールだぜ", "sub": "お節介焼きのスピードワゴンも驚く完璧な正解だッ！" }, { "text": "黄金の精神だ", "sub": "君の計算から、ジョースター家のような黄金の精神を感じるぜ！" }],
+        failMessages: [{ "text": "あまいのう！", "sub": "暗黒街の流儀としても、今の計算ミスは甘すぎるぜッ！" }, { "text": "驚愕だ！", "sub": "スピードワゴンは驚愕する！なんて初歩的なミスなんだッ！" }]
     }
     ,
     {
@@ -1433,8 +1440,8 @@ const CHARACTERS = [
         description: "アレッシーのスタンド。影に触れた相手の時間を遡らせ、赤ん坊や子供に戻す。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "えらいねぇ〜", "sub": "子供に戻っても解けるような、完璧な計算じゃないかぁ！" }, { "text": "影に入った", "sub": "チャッ、チャッ！正解への影を踏み外さなかったなァ！" }],
+        failMessages: [{ "text": "ガキに戻れ", "sub": "こんなミスをするヤツは、おむつから計算をやり直せッ！" }, { "text": "だらしねぇ", "sub": "だらしねぇ計算してんじゃねーよォ！弱虫がッ！" }]
     }
     ,
     {
@@ -1444,63 +1451,63 @@ const CHARACTERS = [
         description: "透明になる赤ちゃん。ジョセフに拾われたスタンド使いの乳児。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "見えない正解", "sub": "アクトン・ベイビーでも見通せないほど完璧な解答だね！" }, { "text": "バブ〜！", "sub": "赤ちゃんもご機嫌になるような素晴らしい計算だッ！" }],
+        failMessages: [{ "text": "オギャー！", "sub": "計算ミスにびっくりして泣いちゃったよ！よしよし…" }, { "text": "透明になる", "sub": "恥ずかしくて計算結果ごと透明になっちゃいたいよ！" }]
     }
     ,
     {
         name: "鋼入りのダン",
         img: "assets/Steely_Dan_Infobox_Manga.png",
         quotes: ["「お仕置きの時間だッ！」", "「ラバーズ、脳内に侵入しろ！」"],
-        description: "ラバーズの本体。自分の苦痛を相手に倍返しする能力を持つ。DIOの刺客の中でも特に卑劣。",
+        description: "ラバーズの本体. 自分の苦痛を相手に倍返しする能力を持つ。DIOの刺客の中でも特に卑劣。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "倍返しだッ！", "sub": "正解の喜びを100倍にして返してやろう！" }, { "text": "脳内に侵入", "sub": "ラバーズが計算式を直接脳内に届けたぜ！" }],
+        failMessages: [{ "text": "俺の苦痛を…", "sub": "ミスした痛みをお前に味合わせてやるッ！" }, { "text": "卑劣とか言うな", "sub": "ミスをしたお前が悪いんだぜ。お仕置きの時間だ！" }]
     }
     ,
     {
         name: "スーパー・フライ",
         img: "assets/Super_Fly_Infobox_Manga.png",
         quotes: ["「この鉄塔から出る事はできん！」", "「反射のダメージがあるぞッ！」"],
-        description: "鋼田一豊大のスタンド。送電鉄塔の姿をしており、一人の人間を中に閉じ込め続ける。",
+        description: "鋼田一豊大のスタンド. 送電鉄塔の姿をしており、一人の人間を中に閉じ込め続ける。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "反射成功！", "sub": "難問の攻撃を鉄塔が見事に反射して正解だッ！" }, { "text": "自給自足だ", "sub": "鉄塔の中でも生きていける完璧な計算能力だぜ！" }],
+        failMessages: [{ "text": "ダメージが！", "sub": "計算ミスというダメージが自分に返ってきたッ！" }, { "text": "鉄塔の掟", "sub": "ミスをしたヤツはこの鉄塔から一生出られんぞ！" }]
     }
     ,
     {
         name: "サーフィス",
         img: "assets/Surface_Infobox_Manga.png",
         quotes: ["「おまえの動きをコピーしたぜ！」", "「人形の俺に勝てるかな？」"],
-        description: "間田敏和のスタンド。木製のデッサン人形で、触れた相手の姿と性格を完全にコピーする。",
+        description: "間田敏和のスタンド. 木製のデッサン人形で、触れた相手の姿と性格を完全にコピーする。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "性格までコピー", "sub": "正解した時の君の嬉しさまでコピーしたぜ！" }, { "text": "完璧な姿だ", "sub": "鏡合わせのような、一点の曇りもない正解だッ！" }],
+        failMessages: [{ "text": "木の人形め", "sub": "ミスまでコピーするなんて、使えない人形だぜ！" }, { "text": "ボロが出たな", "sub": "計算ミスというボロが、人形の隙間から見えてるぞッ！" }]
     }
     ,
     {
         name: "小林玉美",
         img: "assets/Tamami_Kobayashi_Normal_Infobox_Manga.png",
         quotes: ["「罪悪感を感じているようだな...」", "「ザ・ロック！錠前をかけるッ！」"],
-        description: "ザ・ロックの本体。相手の罪悪感に反応して心に錠前をかけ、重圧を与える。",
+        description: "ザ・ロックの本体. 相手の罪悪感に反応して心に錠前をかけ、重圧を与える。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "罪悪感はないな", "sub": "正義の計算に、錠前がつく余地などないっス！" }, { "text": "重圧を跳ねのけ", "sub": "ザ・ロックの重圧を正解で跳ね除けるとは…やるっス！" }],
+        failMessages: [{ "text": "心が重いっス", "sub": "計算ミスへの罪悪感で、その心に錠前がかかったっス！" }, { "text": "カシャッ！", "sub": "ミスしたお前の胸に、デカい錠前がついたぜッ！" }]
     }
     ,
     {
         name: "ザ・ロック",
         img: "assets/The_Lock_Infobox_Manga.png",
         quotes: ["「この重さに耐えきれるかな？」", "「カシャッ（錠前が閉じる音）」"],
-        description: "小林玉美のスタンド。罪悪感を持つ者の心身を物理的に重くしていく錠前。",
+        description: "小林玉美のスタンド. 罪悪感を持つ者の心身を物理的に重くしていく錠前。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "錠前が外れた", "sub": "正解したことで、心の重しがスッキリ取れたなッ！" }, { "text": "罪のない正解", "sub": "一点の曇りもない、清々しい計算だぜッ！" }],
+        failMessages: [{ "text": "重くなれッ！", "sub": "計算ミスを気にするほど、体はどんどん重くなるぞ！" }, { "text": "カシャッ！沈め", "sub": "ミスという罪の重さに耐えきれるかなァ！？" }]
     }
     ,
     {

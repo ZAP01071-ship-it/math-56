@@ -694,8 +694,10 @@ const CHARACTERS = [
         img: "assets/OraDora_NPC_3_DIO_1.png",
         quotes: ["「無駄無駄無駄無駄ァ！！」", "「時よ止まれッ！ザ・ワールド！」"],
         description: "ザ・ワールドの本体。時を止める能力を持つ究極の吸血鬼。",
-        successSFX: "correct.mp3",
-        failSFX: "wrong.mp3"
+        successSFX: "za_warudo.mp3",
+        failSFX: "muda_muda.mp3",
+        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！Wryyyyyyーッ！！" }, { "text": "ロードローラーだ！", "sub": "正解という名の圧力を感じるぞ！" }],
+        failMessages: [{ "text": "無駄無駄ァ！", "sub": "きさまの計算は無駄だッ！" }, { "text": "おまえは今まで", "sub": "食ったパンの枚数をおぼえているのか？" }]
     }
     ,
     {
@@ -901,8 +903,10 @@ const CHARACTERS = [
         img: "assets/THEWORLD.png",
         quotes: ["「時は止まる...ザ・ワールドッ！」", "「無駄無駄無駄無駄無駄ァ！！」"],
         description: "時を止める強力無比なDIOのスタンド。",
-        successSFX: "correct.mp3",
-        failSFX: "wrong.mp3"
+        successSFX: "za_warudo.mp3",
+        failSFX: "muda_muda.mp3",
+        successMessages: [{ "text": "時よ止まれッ！", "sub": "正解の時間だけが動き出すッ！" }, { "text": "無駄無駄ァ！", "sub": "この程度の問題、止まった時の中で解き終えているわ！" }],
+        failMessages: [{ "text": "無駄無駄ァ！", "sub": "お前の計算は…無駄だッ！" }, { "text": "納得いかん", "sub": "DIOのスタンドである私にミスをさせるか…！？" }]
     }
     ,
     {
@@ -1154,8 +1158,8 @@ const CHARACTERS = [
         description: "アヌビス神に操られたポルナレフ。二刀流による凄まじい攻撃を繰り出す。",
         successSFX: "correct.mp3",
         failSFX: "wrong.mp3",
-        successMessages: [{ "text": "最高にハイ！", "sub": "正解だッ！ディ・モールト（非常に）良いぞッ！" }, { "text": "納得だ！", "sub": "お前の計算には「納得」があるッ！" }],
-        failMessages: [{ "text": "無駄無駄ァ！", "sub": "落ち着いて計算しろッ！やり直せッ！" }, { "text": "あまいのう…", "sub": "計算を怒らせたッ！リカバーしろ！" }]
+        successMessages: [{ "text": "憶えたぞッ！", "sub": "一度見た計算は、二度とは間違えんッ！" }, { "text": "二刀流だッ！", "sub": "チャリオッツのスピードに追いつく正解だ！" }],
+        failMessages: [{ "text": "斬れん…ッ", "sub": "計算に隙があったか…アヌビス神の名が泣くぜ！" }, { "text": "鞘に戻れッ！", "sub": "こんなミスをするヤツは剣を持つ資格はないッ！" }]
     }
     ,
     {
@@ -1579,10 +1583,10 @@ const CHARACTERS = [
 ];
 
 const CORRECT_MESSAGES = [
-    { text: "オラオラ！", sub: "正解だッ！最高にハイってやつだ！" },
-    { text: "グレート！", sub: "ディ・モールト（非常に）良いぞッ！" },
+    { text: "最高にハイ！", sub: "正解だッ！これこそが人間の可能性よッ！" },
+    { text: "グレート！", sub: "完璧に計算をこなしたなッ！" },
     { text: "YES I AM!", sub: "正解に決まっているッ！" },
-    { text: "ブラボー！", sub: "正解だ！おお…ブラボー！！" },
+    { text: "ブラボー！", sub: "正解だッ！まさに黄金の精神だッ！" },
     { text: "ゥンまああ〜いっ！", sub: "素晴らしい正解の味だッ！" },
     { text: "「納得」だッ！", sub: "おまえの計算には「納得」があるッ！" }
 ];

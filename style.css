@@ -801,3 +801,91 @@ body {
 .option-btn .fraction {
     font-size: 0.6em;
 }
+
+/* =========================================
+   ドラマチックな新キャラ解放演出（ドラマチックズーム）
+   ========================================= */
+#unlock-visual-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(75, 0, 130, 0.95) 0%, rgba(0, 0, 0, 0.98) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+#unlock-visual-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.unlock-visual-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.unlock-visual-title {
+    font-size: clamp(2rem, 8vw, 4rem);
+    color: var(--jojo-gold);
+    text-shadow: 0 0 20px var(--jojo-pink), 3px 3px 0 #000;
+    margin-bottom: 2rem;
+    font-weight: 900;
+    transform: translateY(-50px);
+    opacity: 0;
+}
+
+#unlock-visual-overlay.active .unlock-visual-title {
+    animation: fade-down 0.5s ease forwards 0.3s;
+}
+
+#unlock-visual-img {
+    max-width: 90vw;
+    max-height: 60vh;
+    object-fit: contain;
+    filter: drop-shadow(0 0 40px var(--jojo-gold));
+    transform: scale(15);
+    opacity: 0;
+}
+
+#unlock-visual-overlay.active #unlock-visual-img {
+    animation: dramatic-zoom-in 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.unlock-visual-name {
+    margin-top: 2rem;
+    font-size: clamp(2.5rem, 10vw, 5rem);
+    color: var(--jojo-white);
+    text-shadow: 6px 6px 0 var(--jojo-purple), 0 0 20px var(--jojo-pink);
+    font-weight: 900;
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+#unlock-visual-overlay.active .unlock-visual-name {
+    animation: pop-in 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 1s;
+}
+
+@keyframes dramatic-zoom-in {
+    0% { transform: scale(20) rotate(15deg); opacity: 0; filter: blur(20px) brightness(2); }
+    10% { opacity: 0.3; }
+    100% { transform: scale(1) rotate(0deg); opacity: 1; filter: blur(0) brightness(1); }
+}
+
+@keyframes fade-down {
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pop-in {
+    to { transform: scale(1); opacity: 1; }
+}
+

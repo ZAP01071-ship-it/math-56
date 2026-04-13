@@ -2042,6 +2042,10 @@ function showResults() {
             const unlockChar = lockedChars[Math.floor(Math.random() * lockedChars.length)];
             unlockedCharacters.push(unlockChar.name);
             localStorage.setItem('jojoZukan', JSON.stringify(unlockedCharacters));
+
+            // ドラマチック演出のトリガー
+            triggerDramaticUnlock(unlockChar);
+
             text += `<div class="unlock-banner">
                 <div class="unlock-title">NEW CHARACTER UNLOCKED!!</div>
                 <img src="${unlockChar.img}" class="unlock-img" />
@@ -2064,6 +2068,46 @@ function showResults() {
             resultMsg.innerText = "「やれやれだぜ...」次はもっと覚悟を決めてこいッ！";
         }
     }
+}
+
+/**
+ * 新キャラ解放時のドラマチックな演出を表示する
+ */
+function triggerDramaticUnlock(char) {
+    const overlay = document.getElementById('unlock-visual-overlay');
+    const img = document.getElementById('unlock-visual-img');
+    const name = document.getElementById('unlock-visual-name');
+    
+    if (!overlay || !img || !name) return;
+
+    img.src = char.img;
+    name.innerText = `『${char.name}』`;
+    
+    // オーバーレイを表示
+    overlay.classList.remove('hidden');
+    
+    // ブラウザの再描画を待ってからアニメーション開始
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            overlay.classList.add('active');
+            // 解放時のSEがあればここで再生（現在はresult.mp3が鳴っている）
+        });
+    });
+
+    const closeOverlay = () => {
+        overlay.classList.remove('active');
+        setTimeout(() => {
+            overlay.classList.add('hidden');
+        }, 500);
+        overlay.removeEventListener('click', closeOverlay);
+    };
+
+    // クリックで閉じる
+    overlay.addEventListener('click', closeOverlay);
+
+    // 演出をしっかり見せるため、一定時間後に自動で閉じる（またはユーザーがクリックするまで待機）
+    // 今回はインパクト重視で、クリックするか7秒待機で閉じる設定にします
+    setTimeout(closeOverlay, 7000);
 }
 
 // Event Listeners
